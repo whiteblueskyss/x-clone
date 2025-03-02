@@ -1,0 +1,35 @@
+{
+  "name": "x-clone",
+  "version": "1.0.0",
+  "description": "A full-stack **Twitter Clone** application that replicates core features of Twitter, including user authentication, tweet creation, liking, commenting, and real-time notifications. This project demonstrates the use of modern web development technologies to build a scalable and responsive social media platform.",
+  "main": "backend/server.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "dev": "nodemon backend/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/whiteblueskyss/x-clone.git"
+  },
+  "keywords": [],
+  "author": "",
+  "type": "module",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/whiteblueskyss/x-clone/issues"
+  },
+  "homepage": "https://github.com/whiteblueskyss/x-clone#readme",
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "cloudinary": "^2.5.1",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.11.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
