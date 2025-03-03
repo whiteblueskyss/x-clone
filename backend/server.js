@@ -6,6 +6,9 @@ import connectMongodDB from "./db/connectMongodDB.js";
 dotenv.config();
 
 const app = express();
+app.use(express.json()); // to parse incoming requests with JSON payloads
+app.use(express.urlencoded({extended: true})); // to parse incoming requests with urlencoded payloads
+
 app.use("/api/auth", authRoutes);
 
 const PORT = process.env.PORT || 8000;
