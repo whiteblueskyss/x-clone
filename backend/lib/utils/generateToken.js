@@ -5,10 +5,10 @@ export const generateTokenAndSetCookie = (userId, res) => {
         expiresIn: "15d",
     });
 
-    res.cookie("token", token, {
-        httpOnly: true,
-        maxAge: 24 * 60 * 60 * 1000,
-    }); 
+    // res.cookie("token", token, {
+    //     httpOnly: true,
+    //     maxAge: 24 * 60 * 60 * 1000,
+    // }); // 1 day 
 
     res.cookie("jwt", token, {
         httpOnly: true, // prevent client side JS from reading the cookie
