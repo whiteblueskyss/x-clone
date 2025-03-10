@@ -1,7 +1,7 @@
 
 # **Twitter Clone**
 
-A full-stack **Twitter Clone** application that replicates core features of Twitter, including user authentication, tweet creation, liking, commenting, and real-time notifications. This project demonstrates the use of modern web development technologies to build a scalable and responsive social media platform.
+A full-stack **Twitter Clone** application that replicates core features of Twitter, including user authentication, tweet creation, liking, commenting etc. This project demonstrates the use of modern web development technologies to build a scalable and responsive social media platform.
 
 ---
 
@@ -22,14 +22,22 @@ A full-stack **Twitter Clone** application that replicates core features of Twit
 
 ## **Technologies Used**
 
+
 ### **Frontend:**
-- **ReactJS**: For building a dynamic and responsive user interface.
-- **Redux**: For state management across the application.
+- **React.js**: A JavaScript library for building user interfaces.
+- **Tailwind CSS**: A utility-first CSS framework for rapidly building custom designs.
+- **DaisyUI**: A component library for Tailwind CSS.
+- **react-icons**: A library that provides a collection of popular icons for React applications.
+- **react-hot-toast**: A lightweight, customizable, and beautiful React toast library.
+- **tanstack/react-query**: A powerful React library for managing server state with query caching, auto re-fetching, and more.
 
 ### **Backend:**
-- **NodeJS**: For building a scalable server-side application.
-- **ExpressJS**: For creating RESTful APIs.
-- **Socket.IO**: For enabling real-time communication and notifications.
+- **Node.js**: A JavaScript runtime built on Chrome's V8 JavaScript engine.
+- **Express.js**: A minimal and flexible Node.js web application framework.
+- **Cloudinary**: A cloud-based image and video management service for uploading and delivering media assets.
+- **bcrypt**: A library for hashing passwords to store them securely.
+- **jsonwebtoken**: A library for generating and verifying JSON Web Tokens (JWT) for authentication and authorization.
+
 
 ### **Database:**
 - **MongoDB**: For storing user, tweet, and interaction data.
@@ -59,12 +67,14 @@ Follow these steps to set up the project locally:
      ```
 
 3. **Set Up Environment Variables**:
-   - Create a `.env` file in the `backend` directory and add the following:
-     ```
-     MONGO_URI=your_mongodb_connection_string
-     JWT_SECRET=your_jwt_secret
-     SOCKET_PORT=your_socket_port
-     ```
+
+   ```
+   MONGO_URI=<your_mongodb_connection_string>
+   JWT_SECRET=<your_jwt_secret>
+   CLOUDINARY_CLOUD_NAME=<your_cloudinary_cloud_name>
+   CLOUDINARY_API_KEY=<your_cloudinary_api_key>
+   CLOUDINARY_API_SECRET=<your_cloudinary_api_secret>
+   ```
 
 4. **Run the Application**:
    - Start the backend server:
