@@ -11,12 +11,8 @@ A full-stack **Twitter Clone** application that replicates core features of Twit
 - **User Authentication**: Secure login and registration using JWT.
 - **Tweet Creation**: Post tweets with real-time updates.
 - **Like and Comment**: Interact with tweets by liking and commenting.
-- **Real-Time Notifications**: Receive instant notifications for likes, comments, and other interactions.
+- **Notifications**: Receive notifications for likes, comments and other interactions.
 - **Profile Management**: View and update user profiles.
-
-### **Admin Features:**
-- **User Management**: Manage user accounts and monitor activity.
-- **Content Moderation**: Remove inappropriate tweets or comments.
 
 ---
 
@@ -40,7 +36,7 @@ A full-stack **Twitter Clone** application that replicates core features of Twit
 
 
 ### **Database:**
-- **MongoDB**: For storing user, tweet, and interaction data.
+- **MongoDB**: For storing user, tweet and other interaction data.
 
 ---
 
@@ -51,23 +47,21 @@ Follow these steps to set up the project locally:
 1. **Clone the Repository**:
    ```bash
    git clone https://github.com/whiteblueskyss/x-clone
-   cd twitter-clone
+   cd x-clone
    ```
 
 2. **Install Dependencies**:
    - For the backend:
      ```bash
-     cd backend
-     npm install
+         npm install
      ```
    - For the frontend:
      ```bash
-     cd frontend
-     npm install
+         cd frontend
+         npm install
      ```
 
 3. **Set Up Environment Variables**:
-
 
 
 ```js
@@ -83,13 +77,12 @@ CLOUDINARY_API_SECRET=...
 4. **Run the Application**:
    - Start the backend server:
      ```bash
-     cd backend
-     npm start
+         npm run dev
      ```
    - Start the frontend development server:
      ```bash
-     cd frontend
-     npm start
+         cd frontend
+         npm run dev
      ```
 
 5. **Access the Application**:
@@ -106,7 +99,7 @@ CLOUDINARY_API_SECRET=...
    - Create tweets and view them in real-time.
 
 3. **Interact with Tweets**:
-   - Like and comment on tweets, and receive real-time notifications.
+   - Like and comment on tweets and receive  notifications.
 
 4. **Profile Management**:
    - Update your profile and view other users' profiles.
